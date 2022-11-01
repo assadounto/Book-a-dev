@@ -1,24 +1,28 @@
-# README
+## TO FETCH DEVELOPERS USE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+(/api/v1/developers)
 
-Things you may want to cover:
+## TO FETCH BOOKING FOR A SPECIFIC DEVELOPER USE
 
-* Ruby version
+(/api/v1/bookings)
 
-* System dependencies
+## TO POST DATA FOR THE DEVELOPER API ENSURE IT HAS THE FOLLOWING FORMAT
 
-* Configuration
+{
+"name": "John Doe",
+"email": "john@gmail.com",
+"phone": "08012345678",
+"city": "Lagos",
+"bio": "I am a developer",
+"github": "kell",
+"photo": "https://res.cloudinary.com/kell/image/upload/v1570628989/developers/developer_1.jpg"
+}
 
-* Database creation
+## TO POST DATA FOR THE BOOKING API ENSURE IT HAS THE FOLLOWING FORMAT
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+{
+"developer_id": 1,
+"date": "2019-10-10",
+"time": "10:00",
+"city": "Lagos",
+}
