@@ -1,6 +1,6 @@
 class Api::V1::BookingsController < ApplicationController
   def index
-    @bookings = Booking.all
+    @bookings = Booking.where(user_id: current_user.id)
     render json: @bookings
   end
 
