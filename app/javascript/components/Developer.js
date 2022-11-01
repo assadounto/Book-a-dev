@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { getDevelopers } from "../redux/developer";
+import { getDevelopers } from "./redux/developer";
 
-function Devs() {
+function Developer() {
   const [developerName, setDeveloperName] = useState("");
   const [developerEmail, setDeveloperEmail] = useState("");
   const [developerStack, setDeveloperStack] = useState("");
+
   const dispatch = useDispatch();
   const developers = useSelector((state) => state.developers.developers);
   useEffect(() => {
@@ -66,7 +67,7 @@ function Devs() {
           })
             .then((response) => response.json())
             .then((data) => {
-              dispatch(fetchDevelopers());
+              dispatch(getDevelopers());
             });
         }}
       >
@@ -76,4 +77,4 @@ function Devs() {
   );
 }
 
-export default Devs;
+export default Developer;
