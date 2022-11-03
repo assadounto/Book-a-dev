@@ -1,30 +1,33 @@
-import axios from "axios";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-const initialState = [];
-
-const GET_DEVELOPERS = "GET_DEVELOPERS";
-
-export const getDevelopers = () => {
-  return async (dispatch) => {
-    try {
-      const { data } = await axios.get("/api/v1/developers");
-      dispatch({
-        type: GET_DEVELOPERS,
-        developers: data,
-      });
-    } catch (error) {
-      console.log(error);
-    }
-  };
+const initialState = {
+  developers: [],
 };
 
-const developersReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case GET_DEVELOPERS:
-      return action.developers;
-    default:
-      return state;
+export const fetchDevelopers = createAsyncThunk(
+  "developers/fetchDevelopers",
+  async () => {
+    const response = await fetch("/api/v1/developers");
+    const data = await response.json();
+    return data;
   }
-};
+);
 
-export default developersReducer;
+export const developersSlice = createSlice({
+  name: "developers",
+  initialState,
+  reducers: {
+    addADeveloper: (state, action) => {
+      state.developers.push(action.payload);
+    },
+  },
+  extraReducers: {
+    [fetchDevelopers.fulfilled]: (state, action) => {
+      state.developers = action.payload;
+    },
+  },
+});
+
+export default developersSlice.reducer;
+
+export const { addADeveloper } = developersSlice.actions;
