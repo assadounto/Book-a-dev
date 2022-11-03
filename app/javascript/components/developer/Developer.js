@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchDevelopers } from "./redux/developer.js";
+import { fetchDevelopers } from "../developer.js";
 import { useParams } from "react-router-dom";
 
 function EachDeveloper() {

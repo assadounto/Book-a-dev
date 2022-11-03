@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Developer from "./Developer";
-import MainPage from "./MainPage";
+import Developer from "./redux/developer/Developer";
+import MainPage from "./redux/developer/MainPage";
 function App() {
   return (
     <BrowserRouter>
