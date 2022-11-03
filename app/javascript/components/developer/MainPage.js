@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchDevelopers } from "../redux/developer.js";
+import { fetchDevelopers } from "../redux/developer";
 
 function MainPage() {
   const [developerName, setDeveloperName] = useState("");
   const [developerEmail, setDeveloperEmail] = useState("");
   const [developerStack, setDeveloperStack] = useState("");
+
   const dispatch = useDispatch();
   const developers = useSelector((state) => state.developers.developers);
   useEffect(() => {
     dispatch(fetchDevelopers());
   }, [dispatch]);
+
   const displayDevelopers = developers.map((developer) => (
     <div key={developer.id}>
       <p>{developer.name}</p>
