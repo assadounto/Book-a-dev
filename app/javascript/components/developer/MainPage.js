@@ -11,20 +11,24 @@ function MainPage() {
   }, [dispatch]);
 
   const displayDevelopers = developers.map((developer) => (
-    <div key={developer.id}>
-      <p>{developer.name}</p>
-      <p>{developer.email}</p>
-      <p>{developer.stack}</p>
-      <p>{developer.bio}</p>
-      <p>{developer.photo}</p>
-      <Link to={`/developers/${developer.id}`}>Show</Link>
+    <div className="mainpage">
+      <div key={developer.id}>
+        <div className="image-div">
+          <img src={developer.photo} alt="new" className="image" />
+        </div>
+        <div className="dev-info">
+          <p>{developer.name}</p>
+          <p>{developer.bio}</p>
+          <Link to={`/developers/${developer.id}`}>Show</Link>
+        </div>
+      </div>
     </div>
   ));
 
   return (
     <div>
-      Developers
-      {displayDevelopers}
+      <h1 className="mainpage-heading">Developers</h1>
+      <div className="display-dev">{displayDevelopers}</div>
       <Link to="/bookings">My Booked Developers</Link>
     </div>
   );
