@@ -21,6 +21,7 @@
 
 .mainpage {
   display: flex;
+  flex-direction: column;
 }
 
 .image-div {
@@ -31,8 +32,13 @@
 
 .mainpage-heading {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
+}
+
+.main-para {
+  font-style: italic;
 }
 
 .display-dev {
@@ -45,4 +51,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.icon-items {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
 }
