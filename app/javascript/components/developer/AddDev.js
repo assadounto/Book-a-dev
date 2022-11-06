@@ -69,7 +69,7 @@ function AddDev() {
               });
           }}
         >
-          Add Dev
+          Add Developer
         </button>
       </form>
     </div>
