@@ -74,3 +74,21 @@ a {
 .form {
   margin-left: 5rem;
 }
+
+.dev-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dev-image {
+  height: 500px;
+  width: 500px;
+}
+
+.image-dev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
