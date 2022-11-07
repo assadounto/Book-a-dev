@@ -26,6 +26,21 @@ function Bookings() {
                 <p>For developer: {developer.name}</p>
               )
           )}
+          <button
+            className="btn btn-danger"
+            onClick={(e) => {
+              e.preventDefault();
+              fetch(`api/v1/bookings/${booking.id}`, {
+                method: "DELETE",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              });
+              dispatch(fetchBookings());
+            }}
+          >
+            Cancel Booking
+          </button>
         </div>
       ))
     ) : (

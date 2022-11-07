@@ -20,6 +20,8 @@ export const bookingsSlice = createSlice({
     addABooking: (state, action) => {
       state.bookings.push(action.payload);
     },
+   
+
   },
   extraReducers: {
     [fetchBookings.fulfilled]: (state, action) => {
