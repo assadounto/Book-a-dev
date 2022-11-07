@@ -97,7 +97,7 @@ a {
 .links {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.8rem;
   background-color: rgb(19, 104, 104);
 }
 
@@ -116,4 +116,10 @@ a {
 .user-email {
   color: white;
   cursor: pointer;
+}
+
+.mainpage-items a {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
 }
