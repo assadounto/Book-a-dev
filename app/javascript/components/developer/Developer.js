@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
 import { useParams } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 
 const Developer = () => {
   const params = useParams();
@@ -18,11 +17,29 @@ const Developer = () => {
   );
 
   const displayDeveloper = foundDeveloper ? (
-    <div className="dev-details">
+    <div className="d-flex justify-content-evenly ">
       <div className="image-dev">
         <img src={foundDeveloper.photo} alt="new" className="dev-image" />
       </div>
-      <Button variant="success d-flex justify-content-end w-10">Reserve</Button>
+      <div>
+        <h2>{foundDeveloper.name}</h2>
+        <p className="bg-secondary text-white p-2">
+          Bio : {foundDeveloper.bio}
+        </p>
+        <p>Email : {foundDeveloper.email}</p>
+        <p className="bg-secondary text-white  p-2">
+          City : {foundDeveloper.city}
+        </p>
+        <p>Phone : {foundDeveloper.phone}</p>
+        <p className="bg-secondary text-white  p-2">
+          Github : {foundDeveloper.github}
+        </p>
+        <div>
+          <button className=" btn btn-success p-3 my-5 rounded-pill">
+            Book Developer
+          </button>
+        </div>
+      </div>
     </div>
   ) : null;
 
