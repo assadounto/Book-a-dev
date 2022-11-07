@@ -23,14 +23,14 @@ function MainPage() {
           <h2>{developer.name}</h2>
           <p>{developer.bio}</p>
           <div className="icons">
-            <Link>
-              <BsFacebook className="icon-items" />
+            <Link className="icon-items">
+              <BsFacebook />
             </Link>
-            <Link>
-              <BsTwitter className="icon-items" />
+            <Link className="icon-items">
+              <BsTwitter />
             </Link>
-            <Link>
-              <BsInstagram className="icon-items" />
+            <Link className="icon-items">
+              <BsInstagram />
             </Link>
           </div>
           <Link to={`/developers/${developer.id}`}>Show</Link>
