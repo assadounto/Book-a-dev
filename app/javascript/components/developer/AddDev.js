@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import React from "react";
 function AddDev() {
   const [developerName, setDeveloperName] = useState("");
   const [developerEmail, setDeveloperEmail] = useState("");

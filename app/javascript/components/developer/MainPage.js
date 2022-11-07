@@ -20,7 +20,9 @@ function MainPage() {
           <img src={developer.photo} alt="new" className="image" />
         </div>
         <div className="dev-info">
-          <h2>{developer.name}</h2>
+          <Link to={`/developers/${developer.id}`}>
+            <h2>{developer.name}</h2>
+          </Link>
           <p>{developer.bio}</p>
           <div className="icons">
             <Link className="icon-items">
@@ -33,7 +35,6 @@ function MainPage() {
               <BsInstagram />
             </Link>
           </div>
-          <Link to={`/developers/${developer.id}`}>Show</Link>
         </div>
       </div>
     </div>
