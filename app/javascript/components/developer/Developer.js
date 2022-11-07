@@ -34,15 +34,10 @@ const Developer = () => {
         <p className="bg-secondary text-white  p-2">
           Github : {foundDeveloper.github}
         </p>
-        <div>
-          <button className=" btn btn-success p-3 my-5 rounded-pill">
-            Book Developer
-          </button>
-        </div>
 
         <Link to={`/add-booking/${foundDeveloper.id}`}>
           <button className=" btn btn-success p-3 rounded-pill">
-            Edit Developer
+            Book Developer
           </button>
         </Link>
       </div>
