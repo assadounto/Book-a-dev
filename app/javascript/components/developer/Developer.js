@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const Developer = () => {
   const params = useParams();
@@ -39,6 +39,12 @@ const Developer = () => {
             Book Developer
           </button>
         </div>
+
+        <Link to={`/add-booking/${foundDeveloper.id}`}>
+          <button className=" btn btn-success p-3 rounded-pill">
+            Edit Developer
+          </button>
+        </Link>
       </div>
     </div>
   ) : null;
