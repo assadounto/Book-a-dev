@@ -93,3 +93,33 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  background-color: rgb(19, 104, 104);
+}
+
+.links a {
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.links a:hover {
+  background-color: white;
+  color: black;
+}
+
+.user-email {
+  color: white;
+  cursor: pointer;
+}
+
+.mainpage-items a {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}

@@ -42,7 +42,7 @@ function MainPage() {
   ));
 
   return (
-    <div>
+    <div className="mainpage-items">
       <div className="mainpage-heading">
         <h1>Developers</h1>
         <p className="main-para">Please select a developer of your choice.</p>
