@@ -1,0 +1,21 @@
+
+.info-cont h2, .info-cont p:first-of-type  {  
+  text-align: right;
+}
+
+.contacts :nth-child(odd) {  
+  background-color: rgb(208, 206, 203);
+}
+
+.contacts p {  
+  margin: 0;
+}
+
+.btn {
+    background-color: rgb(94, 153, 36);
+    margin-top: 1rem;
+}
+
+p {
+    font-weight: 500;
+}
