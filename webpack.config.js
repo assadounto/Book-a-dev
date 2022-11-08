@@ -6,18 +6,22 @@ module.exports = {
   devtool: "source-map",
   entry: {
     application: "./app/javascript/application.js",
-    index: "./app/javascript/controllers/index.js"
+    index: "./app/javascript/controllers/index.js",
   },
   performance: {
-    hints: process.env.NODE_ENV === 'production' ? "warning" : false
+    hints: process.env.NODE_ENV === "production" ? "warning" : false,
   },
-  
+
   module: {
     rules: [
       {
         test: /\.(js)$/,
         exclude: /node_modules/,
         use: ["babel-loader"],
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },

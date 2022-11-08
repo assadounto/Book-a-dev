@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ 
 .image {
   height: 300px;
   width: 300px;
@@ -20,8 +21,7 @@
 }
 
 .mainpage {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
 .image-div {
@@ -123,3 +123,4 @@ a {
   justify-content: flex-end;
   margin-right: 1rem;
 }
+
