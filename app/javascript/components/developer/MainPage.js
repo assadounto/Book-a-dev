@@ -16,11 +16,11 @@ function MainPage() {
   }, [dispatch]);
 
   const slides = [
-    { url: "https://localhost:3001/images/1.jpg", title: "First slide" },
-    { url: "https://localhost:3001/images/1.jpg", title: "Second slide" },
-    { url: "https://localhost:3001/images/1.jpg", title: "Third slide" },
-    { url: "https://localhost:3001/images/1.jpg", title: "Fourth slide" },
-    { url: "https://localhost:3001/images/1.jpg", title: "Fifth slide" },
+    { url: "https://localhost:3002/images/1.jpg", title: "First slide" },
+    { url: "https://localhost:3002/images/1.jpg", title: "Second slide" },
+    { url: "https://localhost:3002/images/1.jpg", title: "Third slide" },
+    { url: "https://localhost:3002/images/1.jpg", title: "Fourth slide" },
+    { url: "https://localhost:3002/images/1.jpg", title: "Fifth slide" },
   ];
   const displayDevelopers = developers.map((developer) => (
     <div className="mainpage">
