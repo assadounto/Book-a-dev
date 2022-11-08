@@ -1,4 +1,3 @@
-import "@hotwired/turbo-rails";
 import _ from 'lodash';
 import "./controllers";
 import React from "react";
@@ -12,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-
+<SideNav/>
       <App />
     </Provider>
   </React.StrictMode>
