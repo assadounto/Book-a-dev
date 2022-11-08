@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
+import ImageSlider from "./ImageSlider";
 import { BsInstagram } from "react-icons/bs";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
@@ -14,10 +15,18 @@ function MainPage() {
     dispatch(fetchDevelopers());
   }, [dispatch]);
 
+  const slides = [
+    { url: "https://localhost:3002/images/1.jpg", title: "First slide" },
+    { url: "https://localhost:3002/images/1.jpg", title: "Second slide" },
+    { url: "https://localhost:3002/images/1.jpg", title: "Third slide" },
+    { url: "https://localhost:3002/images/1.jpg", title: "Fourth slide" },
+    { url: "https://localhost:3002/images/1.jpg", title: "Fifth slide" },
+  ];
   const displayDevelopers = developers.map((developer) => (
     <div className="mainpage">
       <div key={developer.id}>
         <div className="image-div">
+          <ImageSlider slides={slides}/>
           <img src={developer.photo} alt="new" className="image" />
         </div>
         <div className="dev-info">
