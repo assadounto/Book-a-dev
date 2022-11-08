@@ -5,9 +5,29 @@ function AddDev() {
   const [developerStack, setDeveloperStack] = useState("");
   const [developerBio, setDeveloperBio] = useState("");
   const [developerPhoto, setDeveloperPhoto] = useState("");
+  const uploadImage = (files) => {
+    const formData = new FormData();
+    formData.append("file", files[0]);
+    formData.append("upload_preset", "e2e6z2lx");
+    fetch("https://api.cloudinary.com/v1_1/dakiak4mc/image/upload", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setDeveloperPhoto(data.secure_url);
+      });
+  };
   return (
     <div>
       <form>
+        <input
+          type="file"
+          id="file-selector"
+          onChange={(e) => {
+            uploadImage(e.target.files);
+          }}
+        />
         <input
           type="text"
           placeholder="name"
@@ -40,14 +60,7 @@ function AddDev() {
             setDeveloperBio(e.target.value);
           }}
         />
-        <input
-          type="text"
-          placeholder="photo"
-          value={developerPhoto}
-          onChange={(e) => {
-            setDeveloperPhoto(e.target.value);
-          }}
-        />
+
         <button
           onClick={(e) => {
             e.preventDefault();
@@ -60,6 +73,7 @@ function AddDev() {
                 name: developerName,
                 email: developerEmail,
                 stack: developerStack,
+                photo: developerPhoto,
               }),
             })
               .then((response) => response.json())
