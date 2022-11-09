@@ -14,14 +14,27 @@ import {
 const SideNav = () => {
   return (
     <nav className="sidenav">
-      <img src="https://th.bing.com/th/id/OIP.5Gn2Q1GP_6LtqjQeHt8fLAHaEo?pid=ImgDet&rs=1" alt="logo" className="logo " />
-      <NavLink to="/" activeClassName="selected">DEVELOPERS</NavLink>
-      <NavLink to="/reserve" activeClassName="selected">RESERVE</NavLink>
-      <NavLink to="/bookings" activeClassName="selected">MY RESERVATIONS</NavLink>
-      <NavLink to="/add-developer" activeClassName="selected">ADD DEVELOPERS</NavLink>
-      <NavLink to="/delete-developers" activeClassName="selected">REMOVE DEVELOPERS</NavLink>
+      <img
+        src="https://th.bing.com/th/id/OIP.5Gn2Q1GP_6LtqjQeHt8fLAHaEo?pid=ImgDet&rs=1"
+        alt="logo"
+        className="logo "
+      />
+      <NavLink to="/" activeClassName="selected">
+        DEVELOPERS
+      </NavLink>
+      <NavLink to="/reserve" activeClassName="selected">
+        RESERVE
+      </NavLink>
+      <NavLink to="/bookings" activeClassName="selected">
+        MY RESERVATIONS
+      </NavLink>
+      <NavLink to="/add-developer" activeClassName="selected">
+        ADD DEVELOPERS
+      </NavLink>
+      <NavLink to="/delete-developers" activeClassName="selected">
+        REMOVE DEVELOPERS
+      </NavLink>
       <div
-
         className="d-flex flex-column align-items-center justify-content-center social-cont"
         style={{ height: "50%" }}
         data-test="navigationLinks"
@@ -64,6 +77,5 @@ const SideNav = () => {
     </nav>
   );
 };
-
 
 export default SideNav;
