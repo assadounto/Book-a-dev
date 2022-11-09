@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 // import { useDispatch } from 'react-redux';
-import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './side_nav.css';
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./side_nav.css";
 import {
   faYoutube,
   faFacebook,
   faTwitter,
   faInstagram,
   faGooglePlus,
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
 
 const SideNav = () => {
   return (
@@ -21,8 +21,11 @@ const SideNav = () => {
       <NavLink to="/add-dev" activeClassName="selected">ADD DEVELOPERS</NavLink>
       <NavLink to="/developers/remove" activeClassName="selected">REMOVE DEVELOPERS</NavLink>
       <div
+
         className="d-flex flex-column align-items-center justify-content-center social-cont"
-        data-test="socialMediaIcons"
+        className="d-flex flex-column justify-content-between"
+        style={{ height: "50%" }}
+        data-test="navigationLinks"
       >
         <p className="social-wraper">
           <a

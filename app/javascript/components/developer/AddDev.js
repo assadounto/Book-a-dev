@@ -19,8 +19,8 @@ function AddDev() {
       });
   };
   return (
-    <div>
-      <form>
+    <div className="d-flex justify-content-center mx-5">
+      <form className="d-flex flex-column">
         <input
           type="file"
           id="file-selector"
