@@ -7,7 +7,6 @@ import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
-import AddDev from "./AddDev";
 function MainPage() {
   const dispatch = useDispatch();
   const developers = useSelector((state) => state.developers.developers);
@@ -69,7 +68,6 @@ function MainPage() {
         {displayDevelopers}
       </Splide>
       <Link to="/bookings">My Booked Developers</Link>
-      <AddDev />
     </div>
   );
 }
