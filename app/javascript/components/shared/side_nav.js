@@ -18,12 +18,11 @@ const SideNav = () => {
       <NavLink to="/" activeClassName="selected">DEVELOPERS</NavLink>
       <NavLink to="/reserve" activeClassName="selected">RESERVE</NavLink>
       <NavLink to="/bookings" activeClassName="selected">MY RESERVATIONS</NavLink>
-      <NavLink to="/add-dev" activeClassName="selected">ADD DEVELOPERS</NavLink>
-      <NavLink to="/developers/remove" activeClassName="selected">REMOVE DEVELOPERS</NavLink>
+      <NavLink to="/add-developer" activeClassName="selected">ADD DEVELOPERS</NavLink>
+      <NavLink to="/delete-developers" activeClassName="selected">REMOVE DEVELOPERS</NavLink>
       <div
 
         className="d-flex flex-column align-items-center justify-content-center social-cont"
-        className="d-flex flex-column justify-content-between"
         style={{ height: "50%" }}
         data-test="navigationLinks"
       >
