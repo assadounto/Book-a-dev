@@ -19,10 +19,6 @@
   border-radius: 50%;
 }
 
-.mainpage {
-  display: flex;
-  flex-direction: column;
-}
 
 .image-div {
   display: flex;
