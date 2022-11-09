@@ -7,10 +7,13 @@ import AddBooking from "./booking/AddBooking";
 import Bookings from "./booking/Bookings";
 import AddDev from "./developer/AddDev";
 import DeleteDevelopers from "./developer/DeleteDevelopers";
+
 function App() {
   return (
     <Router>
-      <SideNav />
+    <div className="main">
+      <div className="side-cont"><SideNav/></div>
+      <div className="routes-cont">
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/developers/:id" element={<Developer />} />
@@ -19,6 +22,8 @@ function App() {
         <Route path="/add-developer" element={<AddDev />} />
         <Route path="/delete-developers" element={<DeleteDevelopers />} />
       </Routes>
+      </div>
+      </div>
     </Router>
   );
 }
