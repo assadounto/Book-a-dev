@@ -24,6 +24,23 @@
   width: 100%;
 }
 
+.booking-form {
+  color: blueviolet;
+  margin: 0px 0px 0px 0px;
+  padding: 250px 20px 20px;
+  font-size: 1.242rem;
+  background-image: url();
+  text-align: center;
+}
+
+.booking-titles {
+  color: rgba(252, 0, 46, 0.356);
+  margin: 0px 0px 0px 0px;
+  padding: 20px 20px 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
 .image-div {
   display: flex;
   align-items: center;
