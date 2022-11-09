@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 // import { code } from "./assets/images/code.jpg";
 import { ToastContainer, toast } from "react-toastify";
 
+
 function AddBooking() {
   const params = useParams();
   const [date, setDate] = useState("");
