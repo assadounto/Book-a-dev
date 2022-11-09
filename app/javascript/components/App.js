@@ -12,13 +12,17 @@ import Bookings from "./booking/Bookings";
 function App() {
   return (
     <Router>
-      <SideNav />
+    <div className="main">
+      <div className="side-cont"><SideNav/></div>
+      <div className="routes-cont">
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/developers/:id" element={<Developer />} />
         <Route path="/add-booking/:id" element={<AddBooking />} />
         <Route path="/bookings" element={<Bookings />} />
       </Routes>
+      </div>
+      </div>
     </Router>
   );
 }

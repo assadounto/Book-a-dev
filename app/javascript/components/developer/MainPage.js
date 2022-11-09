@@ -68,8 +68,6 @@ function MainPage() {
       >
         {displayDevelopers}
       </Splide>
-      <Link to="/bookings">My Booked Developers</Link>
-      <AddDev />
     </div>
   );
 }
