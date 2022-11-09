@@ -3,6 +3,10 @@
   text-align: right;
 }
 
+.info-cont {
+  width: 20vw;
+ 
+}
 .contacts :nth-child(odd) {  
   background-color: rgb(208, 206, 203);
 }
@@ -20,7 +24,6 @@ p {
     font-weight: 500;
 }
 
-
 .developer {
   display: flex;
   flex-direction: row;
@@ -34,4 +37,5 @@ p {
 border-top-right-radius: 45%;
 border-bottom-right-radius: 45%;
   background-color: rgb(94, 153, 36);
+
 }

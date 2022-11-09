@@ -17,11 +17,11 @@ const SideNav = () => {
       <img src="https://th.bing.com/th/id/OIP.5Gn2Q1GP_6LtqjQeHt8fLAHaEo?pid=ImgDet&rs=1" alt="logo" className="logo " />
       <NavLink to="/" activeClassName="selected">DEVELOPERS</NavLink>
       <NavLink to="/reserve" activeClassName="selected">RESERVE</NavLink>
-      <NavLink to="/bookings" activeClassName="selected">BOOKINGS</NavLink>
-      <NavLink to="/developer/new" activeClassName="selected">ADD DEVELOPERS</NavLink>
+      <NavLink to="/bookings" activeClassName="selected">MY RESERVATIONS</NavLink>
+      <NavLink to="/add-dev" activeClassName="selected">ADD DEVELOPERS</NavLink>
       <NavLink to="/developers/remove" activeClassName="selected">REMOVE DEVELOPERS</NavLink>
       <div
-        className="d-flex flex-column align-items-center justify-content-center"
+        className="d-flex flex-column align-items-center justify-content-center social-cont"
         data-test="socialMediaIcons"
       >
         <p className="social-wraper">

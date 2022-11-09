@@ -29,12 +29,12 @@
 .mainpage-heading {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-para {
-  font-style: italic;
+  color: gray;
   margin: 0;
 }
 
@@ -80,8 +80,7 @@ a {
 .dev-image {
   height:70vh;
   width: 45vw;
-  box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 8 ;
 }
 
 .image-dev {
@@ -113,9 +112,15 @@ a {
   color: rgb(48, 43, 43);
   cursor: pointer;
 }
-
+.mainpage-items{
+  width: 82vw;
+}
 .mainpage-items a {
   display: flex;
   justify-content: flex-end;
   margin-right: 1rem;
+}
+
+.mainpage {
+  padding: 30px;
 }
