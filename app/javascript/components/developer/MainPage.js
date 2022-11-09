@@ -1,4 +1,4 @@
-import React, { useEffect, useState ,useRef} from "react";
+import React, { useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -8,7 +8,6 @@ import { BsInstagram } from "react-icons/bs";
 
 import { useSelector, useDispatch } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
-import AddDev from "./AddDev";
 function MainPage() {
   const dispatch = useDispatch();
   const developers = useSelector((state) => state.developers.developers);
