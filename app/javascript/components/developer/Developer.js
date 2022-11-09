@@ -18,9 +18,10 @@ const Developer = () => {
   );
 
   const displayDeveloper = foundDeveloper ? (
-    <div className="d-flex justify-content-evenly ">
+    <div className="developer">
       <div className="image-dev">
         <img src={foundDeveloper.photo} alt="new" className="dev-image" />
+        <div className="back"></div>
       </div>
       <div>
         <div className="info-cont">
@@ -39,7 +40,6 @@ const Developer = () => {
           Github : {foundDeveloper.github}
         </p>
         </div>
-         <div><img  alt="assadounto's GitHub Stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=assadounto&layout=compact" /></div>
         <Link to={`/add-booking/${foundDeveloper.id}`} className="link">
           <button className=" btn btn-success p-3 rounded-pill">
            <GoGear/>  Book Developer <AiOutlineRightCircle/>
@@ -53,3 +53,4 @@ const Developer = () => {
 };
 
 export default Developer;
+

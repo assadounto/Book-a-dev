@@ -13,50 +13,13 @@ import {
 
 const SideNav = () => {
   return (
-    <nav className="sidenav" data-test="navigationComponent">
-      <div
-        className="d-flex flex-column justify-content-between"
-        style={{ height: '50%' }}
-        data-test="navigationLinks">
-        <div data-test="logo">
-          <NavLink to="/">
-            <h1 className="text-center text-dark">
-              <i>Micronauts</i>
-            </h1>
-          </NavLink>
-        </div>
-
-        <div className="d-flex flex-column center-align" data-test="navLinks">
-          <NavLink
-            to="/"
-            exact
-            activeClassName="active"
-            className="nav-link p-2">
-          DEVELOPERS
-          </NavLink>
-
-          <NavLink
-            to="/bookings"
-            activeClassName="active"
-            className="nav-link p-2">
-            BOOKINGS
-          </NavLink>
-
-              <NavLink
-            to="add-developer"
-            activeClassName="active"
-            className="nav-link p-2">
-            ADD DEVELOPER
-          </NavLink>
-        </div>
-      </div>
-      <button
-        type="button"
-        className="btn btn-secondary w-50 d-flex align-self-center justify-content-center"
-        // onClick={handleClick}
-        data-test="signOutButton">
-        Sign out
-      </button>
+    <nav className="sidenav">
+      <img src="https://th.bing.com/th/id/OIP.5Gn2Q1GP_6LtqjQeHt8fLAHaEo?pid=ImgDet&rs=1" alt="logo" className="logo " />
+      <NavLink to="/" activeClassName="selected">DEVELOPERS</NavLink>
+      <NavLink to="/reserve" activeClassName="selected">RESERVE</NavLink>
+      <NavLink to="/bookings" activeClassName="selected">BOOKINGS</NavLink>
+      <NavLink to="/developer/new" activeClassName="selected">ADD DEVELOPERS</NavLink>
+      <NavLink to="/developers/remove" activeClassName="selected">REMOVE DEVELOPERS</NavLink>
       <div
         className="d-flex flex-column align-items-center justify-content-center"
         data-test="socialMediaIcons"

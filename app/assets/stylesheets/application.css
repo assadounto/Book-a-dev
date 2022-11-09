@@ -13,20 +13,15 @@
  *= require_tree .
  *= require_self
  */
- 
-#root {
-  display: flex;
-
-}
-
-.image {
+ .image {
   height: 300px;
   width: 300px;
   border-radius: 50%;
 }
 
 .mainpage {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-div {
@@ -87,27 +82,27 @@ a {
 }
 
 .dev-image {
-  height: 400px;
-  width: 400px;
-  border-radius: 20%;
+  height:70vh;
+  width: 45vw;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .image-dev {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-right: 3vw;
 }
 
 .links {
   display: flex;
   justify-content: space-between;
   padding: 0.8rem;
-  background-color: rgb(19, 104, 104);
+  background-color: white;
 }
 
 .links a {
-  color: white;
+  color: rgb(42, 37, 37);
   border: 1px solid white;
   border-radius: 25px;
   padding: 5px;
@@ -119,7 +114,7 @@ a {
 }
 
 .user-email {
-  color: white;
+  color: rgb(48, 43, 43);
   cursor: pointer;
 }
 
