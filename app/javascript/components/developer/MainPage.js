@@ -1,14 +1,13 @@
-
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
+
 import { useSelector, useDispatch } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
-
 function MainPage() {
   const dispatch = useDispatch();
   const developers = useSelector((state) => state.developers.developers);
@@ -18,30 +17,30 @@ function MainPage() {
 
   const displayDevelopers = developers.map((developer) => (
     <SplideSlide key={developer.id}>
-    <div className="mainpage">
-      <div key={developer.id}>
-        <div className="image-div">
+      <div className="mainpage">
+        <div key={developer.id}>
+          <div className="image-div">
             <img src={developer.photo} alt="new" className="image" />
-        </div>
-        <div className="dev-info">
-          <Link to={`/developers/${developer.id}`}>
-            <h2>{developer.name}</h2>
-          </Link>
-          <p>{developer.bio}</p>
-          <div className="icons">
-            <Link className="icon-items">
-              <BsFacebook />
+          </div>
+          <div className="dev-info">
+            <Link to={`/developers/${developer.id}`}>
+              <h2>{developer.name}</h2>
             </Link>
-            <Link className="icon-items">
-              <BsTwitter />
-            </Link>
-            <Link className="icon-items">
-              <BsInstagram />
-            </Link>
+            <p>{developer.bio}</p>
+            <div className="icons">
+              <Link className="icon-items">
+                <BsFacebook />
+              </Link>
+              <Link className="icon-items">
+                <BsTwitter />
+              </Link>
+              <Link className="icon-items">
+                <BsInstagram />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </SplideSlide>
   ));
 
@@ -51,25 +50,24 @@ function MainPage() {
         <h1>Developers</h1>
         <p className="main-para">Please select a developer of your choice.</p>
       </div>
-        <Splide
-          options={{
-            perPage: 2,
-            arrows: false,
-            pauseOnHover: true,
-            pauseOnFocus: true,
-            pagination: false,
-            autoplay: true,
-            speed: 4000,
-            type: "loop",
-            interval: 4000,
-            rewindByDrag: true,
-            drag: "free",
-            gap: "2rem",
-          }}
-        >
-          {displayDevelopers}
-        </Splide>
-      <Link to="/bookings">My Booked Developers</Link>
+      <Splide
+        options={{
+          perPage: 2,
+          arrows: true,
+          pauseOnHover: true,
+          pauseOnFocus: true,
+          pagination: false,
+          autoplay: true,
+          speed: 4000,
+          type: "loop",
+          interval: 4000,
+          rewindByDrag: true,
+          drag: "free",
+          gap: "2rem",
+        }}
+      >
+        {displayDevelopers}
+      </Splide>
     </div>
   );
 }

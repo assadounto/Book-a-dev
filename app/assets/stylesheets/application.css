@@ -13,16 +13,12 @@
  *= require_tree .
  *= require_self
  */
- 
-.image {
+ .image {
   height: 300px;
   width: 300px;
   border-radius: 50%;
 }
 
-.mainpage {
-  width: 100%;
-}
 
 .booking-form {
   color: blueviolet;
@@ -49,12 +45,12 @@
 .mainpage-heading {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-para {
-  font-style: italic;
+  color: gray;
   margin: 0;
 }
 
@@ -98,27 +94,26 @@ a {
 }
 
 .dev-image {
-  height: 400px;
-  width: 400px;
-  border-radius: 20%;
+  height:70vh;
+  width: 45vw;
+  border-radius: 8 ;
 }
 
 .image-dev {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-right: 3vw;
 }
 
 .links {
   display: flex;
   justify-content: space-between;
   padding: 0.8rem;
-  background-color: rgb(19, 104, 104);
+  background-color: white;
 }
 
 .links a {
-  color: white;
+  color: rgb(42, 37, 37);
   border: 1px solid white;
   border-radius: 25px;
   padding: 5px;
@@ -130,13 +125,18 @@ a {
 }
 
 .user-email {
-  color: white;
+  color: rgb(48, 43, 43);
   cursor: pointer;
 }
-
+.mainpage-items{
+  width: 82vw;
+}
 .mainpage-items a {
   display: flex;
   justify-content: flex-end;
   margin-right: 1rem;
 }
 
+.mainpage {
+  padding: 30px;
+}
