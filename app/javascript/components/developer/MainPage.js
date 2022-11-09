@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -7,7 +7,6 @@ import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
-import AddDev from "./AddDev";
 function MainPage() {
   const dispatch = useDispatch();
   const developers = useSelector((state) => state.developers.developers);
@@ -69,7 +68,6 @@ function MainPage() {
         {displayDevelopers}
       </Splide>
       <Link to="/bookings">My Booked Developers</Link>
-      <AddDev />
     </div>
   );
 }

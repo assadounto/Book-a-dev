@@ -1,23 +1,24 @@
-import React from 'react';
+import React from "react";
 // import { useDispatch } from 'react-redux';
-import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './side_nav.css';
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./side_nav.css";
 import {
   faYoutube,
   faFacebook,
   faTwitter,
   faInstagram,
   faGooglePlus,
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
 
 const SideNav = () => {
   return (
     <nav className="sidenav" data-test="navigationComponent">
       <div
         className="d-flex flex-column justify-content-between"
-        style={{ height: '50%' }}
-        data-test="navigationLinks">
+        style={{ height: "50%" }}
+        data-test="navigationLinks"
+      >
         <div data-test="logo">
           <NavLink to="/">
             <h1 className="text-center text-dark">
@@ -31,22 +32,33 @@ const SideNav = () => {
             to="/"
             exact
             activeClassName="active"
-            className="nav-link p-2">
-          DEVELOPERS
+            className="nav-link p-2"
+          >
+            DEVELOPERS
           </NavLink>
 
           <NavLink
             to="/bookings"
             activeClassName="active"
-            className="nav-link p-2">
+            className="nav-link p-2"
+          >
             BOOKINGS
           </NavLink>
 
-              <NavLink
+          <NavLink
             to="add-developer"
             activeClassName="active"
-            className="nav-link p-2">
+            className="nav-link p-2"
+          >
             ADD DEVELOPER
+          </NavLink>
+
+          <NavLink
+            to="delete-developers"
+            activeClassName="active"
+            className="nav-link p-2"
+          >
+            DELETE DEVELOPERS
           </NavLink>
         </div>
       </div>
@@ -54,7 +66,8 @@ const SideNav = () => {
         type="button"
         className="btn btn-secondary w-50 d-flex align-self-center justify-content-center"
         // onClick={handleClick}
-        data-test="signOutButton">
+        data-test="signOutButton"
+      >
         Sign out
       </button>
       <div
