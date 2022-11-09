@@ -6,7 +6,6 @@
   background-color: rgb(255, 255, 255);
   padding-top: 1rem;
   border-right: 1px solid rgb(221, 216, 216);
-
 }
 
 .sidenav a {
@@ -22,11 +21,9 @@
   color: white;
 }
 
-
-
 .logo {
   height: 15vh;
-  width:20vw;
+  width: 10vw;
 }
 
 .main {
@@ -35,7 +32,7 @@
 }
 
 h1 {
-  font-family: 'vespa', sans-serif;
+  font-family: "vespa", sans-serif;
 }
 .social-wraper {
   display: flex;
@@ -45,5 +42,5 @@ h1 {
 
 .social-cont {
   height: 60px;
- margin-top: auto;
+  margin-top: auto;
 }

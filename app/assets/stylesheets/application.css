@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- .image {
+.image {
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -97,9 +97,9 @@ a {
 }
 
 .dev-image {
-  height:70vh;
+  height: 70vh;
   width: 45vw;
-  border-radius: 8 ;
+  border-radius: 8;
 }
 
 .image-dev {
@@ -110,16 +110,17 @@ a {
 
 .links {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0.8rem;
-  background-color: white;
+  background-color: rgb(94, 153, 36);
 }
 
 .links a {
-  color: rgb(42, 37, 37);
+  color: rgb(235, 235, 235);
   border: 1px solid white;
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 5px;
+  margin-left: 3rem;
 }
 
 .links a:hover {
@@ -130,8 +131,10 @@ a {
 .user-email {
   color: rgb(48, 43, 43);
   cursor: pointer;
+  margin-top: 1rem;
 }
-.mainpage-items{
+
+.mainpage-items {
   width: 82vw;
 }
 .mainpage-items a {
@@ -142,4 +145,43 @@ a {
 
 .mainpage {
   padding: 30px;
+}
+
+.reserve-dev {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.display-reservations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.reserve-dev {
+  display: flex;
+  padding: 4rem;
+  flex-wrap: wrap;
+}
+
+.reserve-dev:hover {
+  background-color: rgb(94, 153, 36);
+  color: #fff;
+}
+
+.reservation-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user {
+  width: 50px;
+  height: 50px;
 }
