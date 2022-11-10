@@ -16,8 +16,9 @@
   background-color: rgb(208, 206, 203);
 }
 
-.contacts p {
+.contacts p,.contacts a {
   margin: 0;
+  font-size: 20px;
 }
 
 .btn {
@@ -42,4 +43,15 @@ p {
   border-top-right-radius: 45%;
   border-bottom-right-radius: 45%;
   background-color: rgb(94, 153, 36);
+  color: white;
+  text-align: right;
+  padding-top: 12px;
+  padding-right: 14px;
+  font-size: 16px;
 }
+
+.rounded-pill {
+  margin-top: 8rem;
+  margin-left: 4rem;
+}
+

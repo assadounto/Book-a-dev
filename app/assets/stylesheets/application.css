@@ -15,8 +15,8 @@
  */
 
 .image {
-  height: 300px;
-  width: 300px;
+  height: 20vw;
+  width: 50vw;
   border-radius: 50%;
 }
 
@@ -46,6 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .mainpage-heading {
@@ -100,7 +101,7 @@ a {
 }
 
 .dev-image {
-  height: 60vh;
+  height: 75vh;
   width: 40vw;
   border-radius: 30px;
   padding: 2rem;
@@ -117,19 +118,20 @@ a {
   justify-content: flex-end;
   padding: 0.8rem;
   background-color: rgb(94, 153, 36);
+  height: 10vh;
 }
 
 .links a {
   color: rgb(235, 235, 235);
-  border: 1px solid white;
+  border: 1px solid ;
   border-radius: 15px;
   padding: 3px;
   margin-left: 3rem;
 }
 
 .links a:hover {
-  background-color: white;
-  color: black;
+  background-color: rgb(64, 82, 7);
+  color: rgba(140, 152, 25, 0.684);
 }
 
 .user-email {
@@ -191,12 +193,22 @@ a {
 }
 
 .user {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height:45px;
 }
 
 .reservations {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+}
+.sign {
+  align-self: center;
+  margin-top: 10px;
+}
+
+.splide__arrow {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
 }

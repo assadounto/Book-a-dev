@@ -1,5 +1,5 @@
 class Api::V1::BookingsController < ApplicationController
-  
+  load_and_authorize_resource
   def index
     @bookings = Booking.where(user_id: current_user.id)
     render json: @bookings

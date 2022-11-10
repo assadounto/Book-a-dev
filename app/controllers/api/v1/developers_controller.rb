@@ -1,5 +1,5 @@
 class Api::V1::DevelopersController < ApplicationController
-  
+  load_and_authorize_resource
   def index
     @developers = Developer.all
     render json: @developers
