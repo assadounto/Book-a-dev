@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
 import { ToastContainer, toast } from "react-toastify";
+import "./reserve.css";
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -16,7 +17,7 @@ function Reserve() {
   const [city, setCity] = useState("");
   const [developerid, setDeveloperid] = useState("");
   return (
-    <div>
+    <div className="reserved-dev">
       <h2 className="reserve-heading">Reserve a developer</h2>
       <div className="d-flex flex-column align-items-center justify-content-center">
         <h2 className="text-center">Please select a developer</h2>
