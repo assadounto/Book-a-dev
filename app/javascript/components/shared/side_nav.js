@@ -36,7 +36,7 @@ const SideNav = () => {
       <NavLink to="/bookings" activeClassName="selected">
         MY RESERVATIONS
       </NavLink>
-      {user.name === "administrator" ? (
+      {user.role === "admin" ? (
         <div>
           <NavLink to="/add-developer" activeClassName="selected">
             ADD DEVELOPERS
