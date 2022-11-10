@@ -14,13 +14,12 @@ class Api::V1::DevelopersController < ApplicationController
     end
   end
 
-  def destroy 
+  def destroy
     developer = Developer.find(params[:id])
     developer.destroy
     developers = Developer.all
     render json: developers
   end
-
 
   private
 

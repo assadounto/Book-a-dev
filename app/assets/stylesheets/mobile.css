@@ -2,20 +2,23 @@
   .side-cont {
     display: none;
   }
-  
-.mainpage-items {
+
+  .mainpage-items {
     width: 100vw;
   }
-.mainpage {
+
+  .mainpage {
     width: 100%;
-}
-.routes-cont {
+  }
+
+  .routes-cont {
     width: 100%;
     background-color: aqua;
     justify-content: center;
-}  
-.splide {
+  }
+
+  .splide {
     width: 100%;
-margin: 0;
-}
+    margin: 0;
+  }
 }

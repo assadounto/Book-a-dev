@@ -1,3 +1,14 @@
+
+p {
+  font-weight: 500;
+}
+
+.contacts p,
+.contacts a {
+  margin: 0;
+  font-size: 20px;
+}
+
 .info-cont h2,
 .info-cont p:first-of-type {
   text-align: right;
@@ -16,18 +27,9 @@
   background-color: rgb(208, 206, 203);
 }
 
-.contacts p,.contacts a {
-  margin: 0;
-  font-size: 20px;
-}
-
 .btn {
   background-color: rgb(94, 153, 36);
   margin-top: 1rem;
-}
-
-p {
-  font-weight: 500;
 }
 
 .developer {
@@ -54,4 +56,3 @@ p {
   margin-top: 8rem;
   margin-left: 4rem;
 }
-
