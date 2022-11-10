@@ -1,11 +1,15 @@
+User.destroy_all
+Developer.destroy_all
+Booking.destroy_all
 users = User.create([
                       { name: 'John', email: 'john@gmail.com', password: '123456', password_confirmation: '123456' },
                       { name: 'Jane', email: 'jane@gmail.com', password: '123456', password_confirmation: '123456' },
-                      { name: 'Jack', email: 'jack@gmail.com', password: '123456', password_confirmation: '123456' }
+                      { name: 'Admin', email: 'Admin@gmail.com', password: '123456', password_confirmation: '123456',role: 'admin' }
 
                     ])
 
 developers = Developer.create([
+
                                 { name: 'Grayce', email: 'grayce@gmail.com', phone: '+23498023432', city: 'Nairobi', bio: 'I am a Javascript developer',
                                   github: 'https://github.com/Graycemuthui', photo: 'https://avatars.githubusercontent.com/u/95374858?v=4' },
                                 { name: 'Kell', email: 'kell@gmail.com', phone: '+23232324234', city: 'New York', bio: 'I am a Ruby developer',
@@ -16,6 +20,7 @@ developers = Developer.create([
                                   github: 'https://github.com/assadounto', photo: 'https://avatars.githubusercontent.com/u/95765079?v=4' },
                                 { name: 'Micheal', email: 'micheal@gmail.com', phone: '+2344945834', city: 'New York', bio: 'I am a C++ developer',
                                   github: 'https://github.com/MICHAELMUNAVU83', photo: 'https://avatars.githubusercontent.com/u/86654131?v=4' }
+
                               ])
 
 bookings = Booking.create([
