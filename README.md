@@ -1,3 +1,6 @@
+## START SERVER
+Use ```foreman start```
+
 ## TO FETCH DEVELOPERS USE
 
 (/api/v1/developers)
