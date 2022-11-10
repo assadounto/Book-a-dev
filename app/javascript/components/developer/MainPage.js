@@ -1,7 +1,7 @@
 import React, { useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { Splide, SplideSlide,SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
@@ -50,23 +50,31 @@ function MainPage() {
         <h1>Developers</h1>
         <p className="main-para">Please select a developer of your choice.</p>
       </div>
-      <Splide
+      <div className="splide"></div>
+      <Splide hasTrack={ false }
         options={{
-          perPage: 2,
+          perPage: 3,
           arrows: true,
           pauseOnHover: true,
           pauseOnFocus: true,
-          pagination: false,
+          pagination: true,
           autoplay: true,
-          speed: 4000,
+          speed: 6000,
           type: "loop",
           interval: 4000,
           rewindByDrag: true,
           drag: "free",
-          gap: "2rem",
+          gap: "1rem",
         }}
       >
+         <SplideTrack>
         {displayDevelopers}
+        </SplideTrack>
+        <div className="splide__progress">
+           <div className="splide__progress__bar" />
+        </div>
+
+        
       </Splide>
     </div>
   );

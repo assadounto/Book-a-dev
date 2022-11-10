@@ -13,7 +13,7 @@
   font-size: 1.2rem;
   display: block;
   transition: 0.3s;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .active {
@@ -23,7 +23,7 @@
 
 .logo {
   height: 15vh;
-  width: 10vw;
+  width: 18vw;
 }
 
 .main {

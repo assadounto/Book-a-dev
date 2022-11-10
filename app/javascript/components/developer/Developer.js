@@ -4,6 +4,7 @@ import { fetchDevelopers } from "../redux/developer";
 import { useParams, Link } from "react-router-dom";
 import { GoGear } from "react-icons/go";
 import { AiOutlineRightCircle } from "react-icons/ai";
+import { BiLeftArrow, BiLeftArrowAlt } from "react-icons/bi";
 const Developer = () => {
   const params = useParams();
   const dispatch = useDispatch();
@@ -21,7 +22,7 @@ const Developer = () => {
     <div className="developer">
       <div className="image-dev">
         <img src={foundDeveloper.photo} alt="new" className="dev-image" />
-        <div className="back"></div>
+        <div className="back">< BiLeftArrow className="B"/></div>
       </div>
       <div>
         <div className="info-cont">
@@ -33,8 +34,9 @@ const Developer = () => {
           <p className="p-2">City : {foundDeveloper.city}</p>
           <p className="p-2">Phone : {foundDeveloper.phone}</p>
           <a href={foundDeveloper.github} className="p-2 ">
-            Github : {foundDeveloper.github}
+            Github : {foundDeveloper.name}
           </a>
+          
         </div>
         <Link to={`/add-booking/${foundDeveloper.id}`} className="link">
           <button className=" btn btn-success p-3 rounded-pill">

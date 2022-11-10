@@ -1,6 +1,6 @@
 <div class = "links">
   <% if user_signed_in? %>
-  <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+ <div class="sign"> <%= link_to "Sign Out", destroy_user_session_path, method: :delete %></div>
   <%= image_tag("user-logo.png", :alt => "logo", :class => "user") %>
   <div class = "user-email"><%= current_user.name%></div>
   <% else %>
