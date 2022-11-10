@@ -20,6 +20,28 @@
   border-radius: 50%;
 }
 
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  color: blueviolet;
+  padding: 34rem 33.47rem 20rem;
+  font-size: 1rem;
+  background-image: url('https://hks-siblab.org/wp-content/uploads/2020/11/Software-Engineer-vs.-Computer-Engineer.jpg');
+  text-align: center;
+}
+
+.booking-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(245, 239, 239);
+  margin: -20rem 0rem 0rem 0rem;
+  padding: 5px 5px 2px;
+  font-size: 1.62rem;
+  text-align: center;
+}
+
 .image-div {
   display: flex;
   align-items: center;
