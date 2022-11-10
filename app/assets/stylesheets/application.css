@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ 
 .image {
   height: 300px;
   width: 300px;
@@ -125,6 +126,10 @@ a {
 
 .mainpage {
   padding: 30px;
+}
+
+.routes-cont {
+  width: 100%;
 }
 
 .reserve-dev {
