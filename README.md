@@ -157,8 +157,7 @@ Example:
 
 ## Acknowledgments
 
-The credits of the website design goes to Murat Korkmaz.
-Photos: istockphoto
+The credits of the website design goes to [Murat Korkmaz](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign)
 
 ## Show your support
 
