@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
 import { ToastContainer, toast } from "react-toastify";
-import "./reserve.css";
-
 import "react-toastify/dist/ReactToastify.css";
 
 const Reserve = () => {
