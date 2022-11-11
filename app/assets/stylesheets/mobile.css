@@ -12,9 +12,6 @@
     flex-direction: column;
   }
 
-  .links {
-    display: none;
-  }
 
   .side-cont {
     display: none;
@@ -130,5 +127,13 @@
     align-items: center;
     flex-direction: column;
     font-weight: 700;
+  }
+
+  .hd {display: none;}
+
+  .sign-out{
+    width: 40%;
+    margin: auto;
+    height: 60px;
   }
 }
