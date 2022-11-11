@@ -1,98 +1,100 @@
 @media screen and (max-width: 800px) {
-    * {
-        box-sizing: border-box;
-      }
+  * {
+    box-sizing: border-box;
+  }
 
-.dev-image {
+  .dev-image {
     width: 60%;
-}
-.developer {
+  }
+
+  .developer {
     display: flex;
     flex-direction: column;
-   }
+  }
 
-.links {
-    display: none;
-}
-    .side-cont {
+  .links {
     display: none;
   }
- 
-  .mainpage {
-    padding: 30px;
+
+  .side-cont {
+    display: none;
   }
-  .reserved-dev{
+
+  .reserved-dev {
     width: 100vw;
   }
+
   .mainpage-items {
     width: 100vw;
   }
+
   .display-dev {
     display: flex;
     justify-content: space-evenly;
   }
+
   .mainpage {
     width: 100%;
+    padding: 30px;
   }
 
-.info-cont{
+  .info-cont {
     width: 90%;
     margin: auto;
-}
-.bio {
-    width: 100px;
-}
+  }
 
-.image {
+  .bio {
+    width: 100px;
+  }
+
+  .image {
     height: 20vw;
     width: 20vw;
     border-radius: 50%;
   }
-.routes-cont{
+
+  .routes-cont {
     width: 100%;
-}
-.icons {
+  }
+
+  .icons {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
   }
 
-.dev-info {
+  .dev-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     text-decoration: none;
-   
   }
-.dev-info p {
-    height: 70px;
-}
-.dev-info a {
-   text-decoration: none;
-}
-.dev-info h2 {
-     color: black;
-}
 
-.image-dev {
-    margin-top: 1rem;
+  .dev-info p {
+    height: 70px;
+  }
+
+  .dev-info a {
+    text-decoration: none;
+  }
+
+  .dev-info h2 {
+    color: black;
+  }
+
+  .image-dev {
     width: 90%;
     margin: auto;
-}
-.back{
-    padding: 7px;
-    width: 40%;
-    text-align: center;
-}
+  }
 
-.topnav{
+  .topnav {
     display: block;
     width: 100%;
-}
+  }
 
-.back {
-display: none;
+  .back {
+    display: none;
   }
 
   .icon-items {
@@ -101,6 +103,7 @@ display: none;
     padding: 5px;
     color: black;
   }
+
   .reserve-dev {
     border: 1px solid black;
     border-radius: 5px;
@@ -110,17 +113,17 @@ display: none;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  
+
   .display-reservations {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .reserve-dev:hover {
     background-color: rgb(94, 153, 36);
     color: #fff;
   }
-  
+
   .reservation-heading {
     display: flex;
     justify-content: center;
@@ -128,5 +131,4 @@ display: none;
     flex-direction: column;
     font-weight: 700;
   }
-  
 }
