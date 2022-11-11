@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Footer from "../developer/footer";
-import "./side_nav.css";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchUser } from "../redux/users";
 
@@ -39,7 +38,7 @@ const SideNav = () => {
           </NavLink>
         </div>
       ) : null}
-      < Footer/>   
+      <Footer />
     </nav>
   );
 };
