@@ -6,12 +6,13 @@ import "./reserve.css";
 
 import "react-toastify/dist/ReactToastify.css";
 
-function Reserve() {
+const Reserve = () => {
   const dispatch = useDispatch();
   const developers = useSelector((state) => state.developers.developers);
   useEffect(() => {
     dispatch(fetchDevelopers());
   }, []);
+
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [city, setCity] = useState("");
@@ -88,11 +89,7 @@ function Reserve() {
                 city: city,
                 developer_id: developerid,
               }),
-            })
-              .then((response) => response.json())
-              .then((data) => {
-                console.log(data);
-              });
+            }).then((response) => response.json());
 
             toast.success("You have succesfully booked this developer", {
               position: "top-center",
@@ -112,6 +109,6 @@ function Reserve() {
       <ToastContainer />
     </div>
   );
-}
+};
 
 export default Reserve;

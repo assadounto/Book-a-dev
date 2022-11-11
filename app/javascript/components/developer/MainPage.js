@@ -1,16 +1,15 @@
-import React, { useEffect, useState} from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
-import { Splide, SplideSlide,SplideTrack } from "@splidejs/react-splide";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
-
 import { useSelector, useDispatch } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
 import Footer from "./footer";
 
-function MainPage() {
+const MainPage = () => {
   const dispatch = useDispatch();
   const developers = useSelector((state) => state.developers.developers);
   useEffect(() => {
@@ -53,7 +52,8 @@ function MainPage() {
         <p className="main-para">Please select a developer of your choice.</p>
       </div>
       <div className="splide"></div>
-      <Splide hasTrack={ false }
+      <Splide
+        hasTrack={false}
         options={{
           perPage: 3,
           arrows: true,
@@ -69,19 +69,15 @@ function MainPage() {
           gap: "1rem",
         }}
       >
-         <SplideTrack>
-        {displayDevelopers}
-        </SplideTrack>
+        <SplideTrack>{displayDevelopers}</SplideTrack>
         <div className="splide__progress">
-           <div className="splide__progress__bar" />
+          <div className="splide__progress__bar" />
         </div>
-
-        
       </Splide>
       <div className="mb"><Footer /></div>
     </div>
 
   );
-}
+};
 
 export default MainPage;

@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 
-function DeleteDevelopers() {
+const DeleteDevelopers = () => {
   const dispatch = useDispatch();
   const [fetchedDevelopers, setFetchedDevelopers] = useState([]);
   const developers = useSelector((state) => state.developers.developers);
@@ -51,6 +51,6 @@ function DeleteDevelopers() {
   ));
 
   return <div>{displayDevelopers}</div>;
-}
+};
 
 export default DeleteDevelopers;
