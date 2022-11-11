@@ -12,6 +12,7 @@ const Reserve = () => {
   useEffect(() => {
     dispatch(fetchDevelopers());
   }, []);
+
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [city, setCity] = useState("");
@@ -88,11 +89,7 @@ const Reserve = () => {
                 city: city,
                 developer_id: developerid,
               }),
-            })
-              .then((response) => response.json())
-              .then((data) => {
-                console.log(data);
-              });
+            }).then((response) => response.json());
 
             toast.success("You have succesfully booked this developer", {
               position: "top-center",

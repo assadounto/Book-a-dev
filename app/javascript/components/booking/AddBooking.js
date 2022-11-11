@@ -66,11 +66,7 @@ const AddBooking = () => {
                 city: city,
                 developer_id: Number(params.id),
               }),
-            })
-              .then((response) => response.json())
-              .then((data) => {
-                console.log(data);
-              });
+            }).then((response) => response.json());
 
             toast.success("You have succesfully booked this developer", {
               position: "top-center",

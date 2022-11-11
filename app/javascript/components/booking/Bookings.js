@@ -11,8 +11,7 @@ const Bookings = () => {
     dispatch(fetchBookings());
     dispatch(fetchDevelopers());
   }, []);
-  console.log(developers);
-  console.log(bookings);
+
   const displayBookings =
     bookings.length !== 0 ? (
       bookings.map((booking) => (
