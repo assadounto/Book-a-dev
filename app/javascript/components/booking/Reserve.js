@@ -6,7 +6,7 @@ import "./reserve.css";
 
 import "react-toastify/dist/ReactToastify.css";
 
-function Reserve() {
+const Reserve = () => {
   const dispatch = useDispatch();
   const developers = useSelector((state) => state.developers.developers);
   useEffect(() => {
@@ -112,6 +112,6 @@ function Reserve() {
       <ToastContainer />
     </div>
   );
-}
+};
 
 export default Reserve;

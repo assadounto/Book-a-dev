@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchBookings } from "../redux/bookings";
 import { fetchDevelopers } from "../redux/developer";
 
-function Bookings() {
+const Bookings = () => {
   const dispatch = useDispatch();
   const bookings = useSelector((state) => state.bookings.bookings);
   const developers = useSelector((state) => state.developers.developers);
@@ -57,6 +57,6 @@ function Bookings() {
       <div className="display-reservations">{displayBookings}</div>
     </div>
   );
-}
+};
 
 export default Bookings;

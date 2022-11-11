@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 
-function AddBooking() {
+const AddBooking = () => {
   const params = useParams();
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -90,6 +90,6 @@ function AddBooking() {
       <ToastContainer />
     </div>
   );
-}
+};
 
 export default AddBooking;
