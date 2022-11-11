@@ -7,6 +7,7 @@ import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
+import Footer from "./footer";
 
 const MainPage = () => {
   const dispatch = useDispatch();
@@ -73,7 +74,9 @@ const MainPage = () => {
           <div className="splide__progress__bar" />
         </div>
       </Splide>
+      <div className="mb"><Footer /></div>
     </div>
+
   );
 };
 
