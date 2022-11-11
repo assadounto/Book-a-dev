@@ -24,8 +24,8 @@ const Developer = () => {
         <img src={foundDeveloper.photo} alt="new" className="dev-image" />
         <div className="back">< BiLeftArrow className="B"/></div>
       </div>
-      <div>
-        <div className="info-cont">
+      <div className="info-cont" >
+        <div className="info-cont2">
           <h2>{foundDeveloper.name}</h2>
           <p className="p-2 bio">- {foundDeveloper.bio}</p>
         </div>
@@ -39,7 +39,7 @@ const Developer = () => {
           
         </div>
         <Link to={`/add-booking/${foundDeveloper.id}`} className="link">
-          <button className=" btn btn-success p-3 rounded-pill">
+          <button className=" btn ">
             <GoGear /> Book Developer <AiOutlineRightCircle />
           </button>
         </Link>

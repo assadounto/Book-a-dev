@@ -8,6 +8,8 @@ import { BsInstagram } from "react-icons/bs";
 
 import { useSelector, useDispatch } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
+import Footer from "./footer";
+
 function MainPage() {
   const dispatch = useDispatch();
   const developers = useSelector((state) => state.developers.developers);
@@ -76,7 +78,9 @@ function MainPage() {
 
         
       </Splide>
+      <div className="mb"><Footer /></div>
     </div>
+
   );
 }
 
