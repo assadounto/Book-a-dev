@@ -49,7 +49,7 @@ const MainPage = () => {
     <div className="mainpage-items">
       <div className="mainpage-heading">
         <h1>Developers</h1>
-        <p className="main-para">Please select a developer of your choice.</p>
+        <p className="main-para">Please select a developer of your choice</p>
       </div>
       <div className="splide"></div>
       <Splide
@@ -74,9 +74,10 @@ const MainPage = () => {
           <div className="splide__progress__bar" />
         </div>
       </Splide>
-      <div className="mb"><Footer /></div>
+      <div className="mb">
+        <Footer />
+      </div>
     </div>
-
   );
 };
 
